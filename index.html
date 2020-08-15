@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+   
+
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAONKReyEPjjQYzA8T5xm0Jy8MDEBivF1E",
+    authDomain: "data-base-todo-app-2.firebaseapp.com",
+    databaseURL: "https://data-base-todo-app-2.firebaseio.com",
+    projectId: "data-base-todo-app-2",
+    storageBucket: "data-base-todo-app-2.appspot.com",
+    messagingSenderId: "225181359200",
+    appId: "1:225181359200:web:065ec26f67a21b9c7b3705",
+    measurementId: "G-TE04W9X65L"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+   <div class="mid1"><h1><center><I> <u>Todo App</u></I></center></h1></div>
+  <div class="container1">
+         
+    <h2> <i class="fa fa-list-alt" aria-hidden="true"></i>
+        <i> Add Todo Here: </i> <input type="text"  placeholder="title..."  id="name" class="inputtxt"> 
+    <button type="button" class="btn btn-primary" onclick="savedata()" ><i class="fa fa-cloud" aria-hidden="true"></i></i>
+        SAVE DATA</button>
+    <button type="button" class="btn btn-warning" onclick="deldata()"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+        DELETE DATA</button></h2>
+
+</div> 
+
+</body>
+
+<script src="app.js"></script>
+</html>
